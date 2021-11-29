@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="gradient-warm flex justify-center">
+    <div>
+      <header class="wrapper py-8">
+        <img class="w-32" src="images/logo.svg" alt="base apparel logo" />
+      </header>
+
+      <main class="md:mt-20">
+        <img class="w-full md:hidden" src="images/hero-mobile.jpg" alt="hero image" />
+        <article class="wrapper text-center md:text-left py-14">
+          <h1 class="text-4xl md:text-6xl uppercase tracking-[0.2em]">
+            <span class="text-desaturated-red font-light">We're</span>
+            <br />
+            <span class="font-bold text-dark-grayish-red"
+              >coming<br />
+              soon</span
+            >
+          </h1>
+          <p class="mt-6 text-desaturated-red">
+            Hello fellow shoppers! We're currently building our new fashion store. Add
+            your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+
+          <form
+            action="POST"
+            id="send-email-form"
+            class="relative flex items-stretch mt-8"
+          >
+            <label for="email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="email-input"
+              required="true"
+              placeholder="Email Address"
+            />
+            <img
+              id="email-error-icon"
+              class="email-error-icon"
+              src="images/icon-error.svg"
+              alt="error"
+            />
+            <span id="email-error-msg" class="email-error-msg"
+              >Please provide a valid email</span
+            >
+            <button class="send-email-btn" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+          </form>
+        </article>
+      </main>
+    </div>
+    <img
+      class="hidden md:block h-screen"
+      src="images/hero-desktop.jpg"
+      alt="hero image"
+    />
+
+    <script type="module" src="js"></script>
+  </body>
+</html>
