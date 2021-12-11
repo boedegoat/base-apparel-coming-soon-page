@@ -41,8 +41,9 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Tailwind CSS
 - Javascript
+- [Tailwind CSS](https://tailwindcss.com/) - utility-first CSS framework
+- [Vite](https://vitejs.dev/) - for build tool
 
 ### What I learned
 
