@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .app-container {
+    @apply grid lg:grid-cols-5 lg:h-screen;
+  }
+
   .email-input {
     @apply w-full
     bg-transparent
