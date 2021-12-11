@@ -52,9 +52,8 @@
     grid
     place-items-center
     rounded-full
-    bg-gradient-to-br
-    from-very-light-red
-    to-soft-red;
+    gradient-soft-red
+    hover:w-[5.5rem] hover:translate-x-4 hover:to-very-light-red;
   }
 
   .toast {
@@ -67,11 +66,20 @@
 }
 
 @layer utilities {
-  .gradient-warm {
+  .gradient-white {
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 
-  .gradient-orange {
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+  .gradient-soft-red {
+    @apply bg-gradient-to-br from-very-light-red to-light-red;
   }
+
+  .bg-pattern {
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-size: cover;
+  }
+}
+
+* {
+  transition: 0.2s ease-out;
 }

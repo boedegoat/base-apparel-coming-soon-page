@@ -14,100 +14,103 @@
     <script type="module" src="js" defer></script>
     <title>Vite App</title>
   </head>
-  <body class="">
-    <div class="grid lg:grid-cols-5 lg:h-screen bg-white">
-      <div
-        class="
-          py-10
-          max-w-md
-          mx-auto
-          sm:max-w-xl sm:py-14
-          lg:flex
-          flex-col
-          lg:col-span-3 lg:max-w-full
-        "
-      >
-        <header class="px-6 sm:px-0 lg:py-4">
-          <img class="w-32 lg:w-40" src="images/logo.svg" alt="base apparel logo" />
-        </header>
-        <img
-          class="
-            w-full
-            mt-8
-            shadow-xl
-            sm:mt-12 sm:h-80 sm:object-cover sm:object-top
-            lg:hidden
-          "
-          src="images/hero-mobile.jpg"
-          alt="hero image"
-        />
+  <body class="gradient-white">
+    <div class="grid lg:grid-cols-5 lg:h-screen">
+      <div class="lg:col-span-3 lg:max-w-full lg:bg-pattern">
         <div
           class="
-            text-center
-            px-6
-            mt-8
+            h-full
+            py-10
+            max-w-md
             mx-auto
-            sm:px-0 sm:mt-12 sm:max-w-sm
-            lg:text-left lg:my-auto lg:max-w-lg
+            sm:max-w-xl sm:py-14
+            lg:flex
+            flex-col
+            lg:max-w-lg
           "
         >
-          <h1
+          <header class="px-6 sm:px-0 lg:py-4">
+            <img class="w-32 lg:w-40" src="images/logo.svg" alt="base apparel logo" />
+          </header>
+          <img
             class="
-              text-4xl
-              uppercase
-              tracking-[0.2em]
-              sm:text-5xl
-              lg:text-6xl
-              xl:text-7xl
+              w-full
+              mt-8
+              shadow-xl
+              sm:mt-12 sm:h-80 sm:object-cover sm:object-top
+              lg:hidden
+            "
+            src="images/hero-mobile.jpg"
+            alt="hero image"
+          />
+          <div
+            class="
+              text-center
+              px-6
+              mt-8
+              sm:px-0 sm:mt-12 sm:max-w-sm sm:mx-auto
+              lg:mx-0 lg:max-w-xl lg:text-left lg:my-auto
             "
           >
-            <span class="text-desaturated-red font-light">We're</span>
-            <br />
-            <span class="font-bold text-dark-grayish-red"
-              >coming<br />
-              soon</span
+            <h1
+              class="
+                text-4xl
+                uppercase
+                tracking-[0.2em]
+                sm:text-5xl
+                lg:text-6xl
+                xl:text-7xl
+              "
             >
-          </h1>
-          <p class="mt-6 sm:mt-8 text-desaturated-red sm:text-lg xl:text-xl">
-            Hello fellow shoppers! We're currently building our new fashion store. Add
-            your email below to stay up-to-date with announcements and our launch deals.
-          </p>
+              <span class="text-desaturated-red font-light">We're</span>
+              <br />
+              <span class="font-bold text-dark-grayish-red"
+                >coming<br />
+                soon</span
+              >
+            </h1>
+            <p class="mt-6 sm:mt-8 text-desaturated-red sm:text-lg xl:text-xl">
+              Hello fellow shoppers! We're currently building our new fashion store. Add
+              your email below to stay up-to-date with announcements and our launch deals.
+            </p>
 
-          <form
-            action="POST"
-            id="send-email-form"
-            class="relative flex items-stretch mt-8 sm:mt-12"
-          >
-            <label for="email" class="sr-only">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="email-input"
-              placeholder="Email Address"
-            />
-            <img
-              id="email-error-icon"
-              class="email-error-icon"
-              src="images/icon-error.svg"
-              alt="error"
-            />
-            <span id="email-error-msg" class="email-error-msg"
-              >Please provide a valid email</span
+            <form
+              action="POST"
+              id="send-email-form"
+              class="relative flex items-stretch mt-8 sm:mt-12"
             >
-            <button class="send-email-btn" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-                <path
-                  fill="none"
-                  stroke="#FFF"
-                  stroke-width="2"
-                  d="M1 1l8.836 8.836L1 18.671"
-                />
-              </svg>
-            </button>
-          </form>
+              <label for="email" class="sr-only">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="email-input"
+                placeholder="Email Address"
+              />
+              <img
+                id="email-error-icon"
+                class="email-error-icon"
+                src="images/icon-error.svg"
+                alt="error"
+              />
+              <span id="email-error-msg" class="email-error-msg"
+                >Please provide a valid email</span
+              >
+              <button class="send-email-btn" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M1 1l8.836 8.836L1 18.671"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+
       <div class="relative hidden lg:block lg:col-span-2 bg-blue-100">
         <img
           class="absolute inset-0 w-full h-full object-cover object-top"
