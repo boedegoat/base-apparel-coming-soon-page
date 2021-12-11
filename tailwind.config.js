@@ -16,6 +16,9 @@ module.exports = {
         'desaturated-red': 'hsl(0, 36%, 70%)',
         'dark-grayish-red': 'hsl(0, 6%, 24%)',
       },
+      boxShadow: {
+        button: '0 10px 20px hsl(0, 80%, 86%)',
+      },
     },
   },
   variants: {

@@ -57,6 +57,7 @@
     place-items-center
     rounded-full
     gradient-soft-red
+    shadow-button
     hover:w-[5.5rem] hover:translate-x-4 hover:to-very-light-red;
   }
 
