@@ -11,18 +11,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js" defer></script>
     <title>Vite App</title>
   </head>
-  <body class="gradient-warm flex justify-center">
-    <div>
-      <header class="wrapper py-8">
-        <img class="w-32" src="images/logo.svg" alt="base apparel logo" />
-      </header>
-
-      <main class="md:mt-20">
-        <img class="w-full md:hidden" src="images/hero-mobile.jpg" alt="hero image" />
-        <article class="wrapper text-center md:text-left py-14">
-          <h1 class="text-4xl md:text-6xl uppercase tracking-[0.2em]">
+  <body class="">
+    <div class="grid lg:grid-cols-5 lg:h-screen bg-white">
+      <div
+        class="
+          py-10
+          max-w-md
+          mx-auto
+          sm:max-w-xl sm:py-14
+          lg:flex
+          flex-col
+          lg:col-span-3 lg:max-w-full
+        "
+      >
+        <header class="px-6 sm:px-0 lg:py-4">
+          <img class="w-32 lg:w-40" src="images/logo.svg" alt="base apparel logo" />
+        </header>
+        <img
+          class="
+            w-full
+            mt-8
+            shadow-xl
+            sm:mt-12 sm:h-80 sm:object-cover sm:object-top
+            lg:hidden
+          "
+          src="images/hero-mobile.jpg"
+          alt="hero image"
+        />
+        <div
+          class="
+            text-center
+            px-6
+            mt-8
+            mx-auto
+            sm:px-0 sm:mt-12 sm:max-w-sm
+            lg:text-left lg:my-auto lg:max-w-lg
+          "
+        >
+          <h1
+            class="
+              text-4xl
+              uppercase
+              tracking-[0.2em]
+              sm:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            "
+          >
             <span class="text-desaturated-red font-light">We're</span>
             <br />
             <span class="font-bold text-dark-grayish-red"
@@ -30,7 +68,7 @@
               soon</span
             >
           </h1>
-          <p class="mt-6 text-desaturated-red">
+          <p class="mt-6 sm:mt-8 text-desaturated-red sm:text-lg xl:text-xl">
             Hello fellow shoppers! We're currently building our new fashion store. Add
             your email below to stay up-to-date with announcements and our launch deals.
           </p>
@@ -38,7 +76,7 @@
           <form
             action="POST"
             id="send-email-form"
-            class="relative flex items-stretch mt-8"
+            class="relative flex items-stretch mt-8 sm:mt-12"
           >
             <label for="email" class="sr-only">Email Address</label>
             <input
@@ -46,7 +84,6 @@
               id="email"
               name="email"
               class="email-input"
-              required="true"
               placeholder="Email Address"
             />
             <img
@@ -69,15 +106,15 @@
               </svg>
             </button>
           </form>
-        </article>
-      </main>
+        </div>
+      </div>
+      <div class="relative hidden lg:block lg:col-span-2 bg-blue-100">
+        <img
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="images/hero-desktop.jpg"
+          alt="hero image"
+        />
+      </div>
     </div>
-    <img
-      class="hidden md:block h-screen"
-      src="images/hero-desktop.jpg"
-      alt="hero image"
-    />
-
-    <script type="module" src="js"></script>
   </body>
 </html>
